@@ -80,10 +80,7 @@ class Student(Persons):
                 print(f"  Grades  : {grades}")
                 print(f"  Average : {avg:.1f}")
                 return
-
-
-
-
+                
     def add_grade(self):
         roll_no = input("tell the roll number :- ")
         subject = input("Subject : ")
@@ -96,9 +93,6 @@ class Student(Persons):
                 print("grade added successfully")
                 return 
         print("student not found")
-
-
-
 
 class Teacher(Persons):
     def get_roles(self):
@@ -141,8 +135,6 @@ class Teacher(Persons):
                 return
         print("Teacher not found.")
 
-        
-
 stud = Student()
 tech = Teacher()
 print("press 1  to register a student")
@@ -150,7 +142,6 @@ print("press 2  to register a teacher")
 print("press 3  to add grades")
 print("press 4  to show a student detail")
 print("press 5  to show a teacher detail")
-
 
 choice = int(input("please tell your choice :- "))
 
